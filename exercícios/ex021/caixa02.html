@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.63);
+            border-radius: 10px;
+        }
+        nav{
+            background-color: gray;
+            padding: 5px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.63);
+            border-radius: 10px 0px;
+           
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            
+        }
+        article > aside{
+            background-color: rgb(46, 46, 46);
+            color: white;
+
+        }
+        main{
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+            text-align: justify;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.63);
+            border-radius: 10px;
+        }
+        footer{
+            background-color: rgb(48, 47, 47);
+            text-align: center;
+            color: white;
+            padding: 4px;
+            margin: 0px
+        }
+        footer > p{
+            margin: 0px;
+        }
+        section{
+            background-color: gray;
+        }
+        h2{
+            background-color: whitesmoke;
+        }
+       
+
+    
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Esporte</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa repellendus rem vero eum fugiat harum esse quasi consectetur, nulla cum illo possimus ea provident ipsam quis! Labore soluta fugiat eius.</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis error natus aliquam sed quas nobis, quod architecto deserunt nulla ab tempora at excepturi? Id perferendis provident pariatur architecto accusamus aspernatur!</p>
+                <aside>
+                    <p>Artigo escrito por josé da silva</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Noticias sobre a Politica</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident cum sequi, quia animi eos velit. Dolor illum odit iure labore incidunt id sapiente vitae? Nisi illo minus ex laudantium optio.</p>
+                <aside>
+                    <p>Artigo escrito por josé da silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+    <p>Site desenvolvido pelo Jefferson Vieira</p>
+</footer>
+    
+</body>
+</html>
