@@ -10,9 +10,20 @@
     body{
         font-family: Arial, Helvetica, sans-serif;
     }
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+
+    }
     table{
         width: 500px;
         border-collapse: collapse;
+        position: relative;
+    }
+    tbody >tr:nth-child(2n){
+        background-color: lightgray;
     }
     td, th {
         border: 1px solid black;
@@ -22,13 +33,23 @@
         background-color: gray;
         color: white;
     }
+    thead > tr > th{
+        position: sticky;
+        top:-1px;
+        background-color: gray;
+    }
+    td.num {
+        text-align: right;
+    }
 </style>
 <body>
+    <h1>Uso de tabelas Grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>população</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">população</th>
             </tr>
 
         </thead>
@@ -142,12 +163,14 @@
 
         </tbody>
         <tfoot>
-            <th>Total de Habitantes</th>
-            <td>0000</td>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num"><strong>204.149.460</strong></td>
 
         </tfoot>
     </table>
-
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae tenetur esse voluptatem. Eum cupiditate atque ad, iure ea repudiandae eaque consequatur sunt consectetur necessitatibus voluptate laboriosam itaque corporis culpa blanditiis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. A iste porro distinctio veniam assumenda eveniet excepturi repellat id et. Non eum deleniti cupiditate aut ipsa aliquam accusantium unde tempora laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, similique, facilis quasi blanditiis tempora enim quaerat, minima id neque sapiente assumenda veritatis. Earum ab consequatur reiciendis id. Quos, a et! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, perferendis hic laudantium numquam cupiditate natus explicabo cum praesentium tempore quaerat soluta iure libero adipisci voluptatem maiores repellendus ipsa. Debitis, esse?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae tenetur esse voluptatem. Eum cupiditate atque ad, iure ea repudiandae eaque consequatur sunt consectetur necessitatibus voluptate laboriosam itaque corporis culpa blanditiis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. A iste porro distinctio veniam assumenda eveniet excepturi repellat id et. Non eum deleniti cupiditate aut ipsa aliquam accusantium unde tempora laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, similique, facilis quasi blanditiis tempora enim quaerat, minima id neque sapiente assumenda veritatis. Earum ab consequatur reiciendis id. Quos, a et! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, perferendis hic laudantium numquam cupiditate natus explicabo cum praesentium tempore quaerat soluta iure libero adipisci voluptatem maiores repellendus ipsa. Debitis, esse?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae tenetur esse voluptatem. Eum cupiditate atque ad, iure ea repudiandae eaque consequatur sunt consectetur necessitatibus voluptate laboriosam itaque corporis culpa blanditiis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. A iste porro distinctio veniam assumenda eveniet excepturi repellat id et. Non eum deleniti cupiditate aut ipsa aliquam accusantium unde tempora laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, similique, facilis quasi blanditiis tempora enim quaerat, minima id neque sapiente assumenda veritatis. Earum ab consequatur reiciendis id. Quos, a et! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, perferendis hic laudantium numquam cupiditate natus explicabo cum praesentium tempore quaerat soluta iure libero adipisci voluptatem maiores repellendus ipsa. Debitis, esse?</p>
     
 </body>
 </html>
